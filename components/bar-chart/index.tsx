@@ -84,7 +84,7 @@ export default function BarChart({
   margin = defaultMargin,
 }: Props) {
   const isMobile = useMediaQuery("only screen and (max-width : 640px)");
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
 
   const {
     tooltipOpen,
@@ -109,14 +109,15 @@ export default function BarChart({
 
   // colors
   const axisStrokeColor =
-    theme === "dark" ? colors.neutral[400] : colors.gray[600];
+    resolvedTheme === "dark" ? colors.neutral[400] : colors.gray[600];
   const axisFillColor =
-    theme === "dark" ? colors.neutral[300] : colors.gray[600];
+    resolvedTheme === "dark" ? colors.neutral[300] : colors.gray[600];
   const gridFillColor =
-    theme === "dark" ? colors.neutral[600] : colors.gray[300];
-  const rectBgColor = theme === "dark" ? colors.neutral[900] : colors.gray[100];
+    resolvedTheme === "dark" ? colors.neutral[600] : colors.gray[300];
+  const rectBgColor =
+    resolvedTheme === "dark" ? colors.neutral[900] : colors.gray[100];
   const tooltipBgColor =
-    theme === "dark" ? colors.neutral[800] : colors.gray[50];
+    resolvedTheme === "dark" ? colors.neutral[800] : colors.gray[50];
 
   const formatDate = useCallback(
     (e: Date) => {
