@@ -6,7 +6,6 @@
 
 <p align="center">
   <a href="#features"><strong>Features</strong></a> ·
-  <a href="#demo"><strong>Demo</strong></a> ·
   <a href="#clone-and-run-locally"><strong>Clone and run locally</strong></a> ·
   <a href="#more-unkey-examples"><strong>More Examples</strong></a>
 </p>
@@ -25,10 +24,6 @@
   - Streamlined creation of new API keys
 - supabase-ssr. A package to configure Supabase Auth to use cookies
 - Styling with [Tailwind CSS](https://tailwindcss.com)
-
-## Demo
-
-You can view a fully working demo at [unkey-nextjs-pay-as-you-go.vercel.app](https://unkey-nextjs-pay-as-you-go.vercel.app/).
 
 ## Clone and run locally
 
